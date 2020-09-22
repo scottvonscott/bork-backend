@@ -1,4 +1,4 @@
 class DungeonLevel < ApplicationRecord
     has_many :monsters
-    has_many :items
+    has_many :loot_items
 end
