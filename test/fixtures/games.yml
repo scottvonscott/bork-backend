@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Player: one
+  turn_count: 1
+  score: 1
+  player_health: 1
+  player_attack: 1
+
+two:
+  Player: two
+  turn_count: 1
+  score: 1
+  player_health: 1
+  player_attack: 1
