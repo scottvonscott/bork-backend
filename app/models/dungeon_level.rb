@@ -1,0 +1,2 @@
+class DungeonLevel < ApplicationRecord
+end
