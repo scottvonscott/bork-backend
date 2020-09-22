@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  health: 1
+  attack: 1
+  dungeon_level: one
+  img_url: MyString
+  intro_text: MyString
+  death_text: MyString
+
+two:
+  name: MyString
+  health: 1
+  attack: 1
+  dungeon_level: two
+  img_url: MyString
+  intro_text: MyString
+  death_text: MyString
