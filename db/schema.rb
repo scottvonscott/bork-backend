@@ -35,7 +35,7 @@ ActiveRecord::Schema.define(version: 2020_09_22_035212) do
     t.string "name"
     t.text "description"
     t.integer "dungeon_level_id", null: false
-    t.string "type"
+    t.string "bonus_type"
     t.integer "bonus"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

@@ -4,7 +4,7 @@ class CreateLootItems < ActiveRecord::Migration[6.0]
       t.string :name
       t.text :description
       t.references :dungeon_level, null: false, foreign_key: true
-      t.string :type
+      t.string :bonus_type
       t.integer :bonus
 
       t.timestamps

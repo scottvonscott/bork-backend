@@ -30,7 +30,7 @@ death_text: "The Giant Rat falls over dead. A few items fall out his bag and you
 
 Monster.create(name: "Minotaur", health: 15, attack: 8, dungeon_level_id: 2, img_url: "",
 intro_text: "A huge Minotaur runs up and snorts heavily. He flexes his muscles for you",
-quote: "I'm the beefiest!"
+quote: "I'm the beefiest!",
 death_text: "The Minotaur falls over dead, knocking over a chest of items. Cow punnnnn",
 )
 
@@ -40,26 +40,26 @@ quote: "Giant piles of treasure offer very poor lumbar support.",
 death_text: "The Dragon falls overt dead.",
 )
 
-LootItem.create(name: "Steel Sword", dungeon_level_id: 1, type: "Attack", bonus: 5,
-description: "Stick 'em with the point end"
+LootItem.create(name: "Steel Sword", dungeon_level_id: 1, bonus_type: "Attack", bonus: 5,
+description: "Stick 'em with the pointy end"
 )
 
-LootItem.create(name: "Steel Kite Shield", dungeon_level_id: 1, type: "Health", bonus: 5,
+LootItem.create(name: "Steel Kite Shield", dungeon_level_id: 1, bonus_type: "Health", bonus: 5,
 description: "What idiot thought this could fly?"
 )
 
-# LootItem.create(name: , dungeon_level_id: 1, type: , bonus: ,
+# LootItem.create(name: , dungeon_level_id: 1, bonus_type: , bonus: ,
 # description: ""
 # )
 
-LootItem.create(name: "Valyrian Steel Sword", dungeon_level_id: 2, type: "Attack", bonus: 10,
+LootItem.create(name: "Valyrian Steel Sword", dungeon_level_id: 2, bonus_type: "Attack", bonus: 10,
 description: "I dun wan it"
 )
 
-LootItem.create(name: "Mithril Armor", dungeon_level_id: 2, type: "Health", bonus: 10,
+LootItem.create(name: "Mithril Armor", dungeon_level_id: 2, bonus_type: "Health", bonus: 10,
 description: "You're full of suprises Master Baggins"
 )
 
-# LootItem.create(name: , dungeon_level_id: 2, type: , bonus: ,
+# LootItem.create(name: , dungeon_level_id: 2, bonus_type: , bonus: ,
 # description: ""
 # )
