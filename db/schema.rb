@@ -49,6 +49,7 @@ ActiveRecord::Schema.define(version: 2020_09_22_035212) do
     t.integer "dungeon_level_id", null: false
     t.string "img_url"
     t.string "intro_text"
+    t.string "quote"
     t.string "death_text"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
