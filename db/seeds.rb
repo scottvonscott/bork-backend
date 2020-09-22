@@ -40,3 +40,26 @@ quote: "Giant piles of treasure offer very poor lumbar support.",
 death_text: "The Dragon falls overt dead.",
 )
 
+LootItem.create(name: "Steel Sword", dungeon_level_id: 1, type: "Attack", bonus: 5,
+description: "Stick 'em with the point end"
+)
+
+LootItem.create(name: "Steel Kite Shield", dungeon_level_id: 1, type: "Health", bonus: 5,
+description: "What idiot thought this could fly?"
+)
+
+# LootItem.create(name: , dungeon_level_id: 1, type: , bonus: ,
+# description: ""
+# )
+
+LootItem.create(name: "Valyrian Steel Sword", dungeon_level_id: 2, type: "Attack", bonus: 10,
+description: "I dun wan it"
+)
+
+LootItem.create(name: "Mithril Armor", dungeon_level_id: 2, type: "Health", bonus: 10,
+description: "You're full of suprises Master Baggins"
+)
+
+# LootItem.create(name: , dungeon_level_id: 2, type: , bonus: ,
+# description: ""
+# )

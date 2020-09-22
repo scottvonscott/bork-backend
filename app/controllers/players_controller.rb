@@ -24,19 +24,19 @@ class PlayersController < ApplicationController
     end
   end
 
-  # PATCH/PUT /players/1
-  def update
-    if @player.update(player_params)
-      render json: @player
-    else
-      render json: @player.errors, status: :unprocessable_entity
-    end
-  end
+  # # PATCH/PUT /players/1
+  # def update
+  #   if @player.update(player_params)
+  #     render json: @player
+  #   else
+  #     render json: @player.errors, status: :unprocessable_entity
+  #   end
+  # end
 
-  # DELETE /players/1
-  def destroy
-    @player.destroy
-  end
+  # # DELETE /players/1
+  # def destroy
+  #   @player.destroy
+  # end
 
   private
     # Use callbacks to share common setup or constraints between actions.
