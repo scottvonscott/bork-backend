@@ -13,7 +13,7 @@ exit_text: "You press on. Further in, there's a heavy wooden door embeded in the
 )
 
 DungeonLevel.create(level_number: 2,
-entry_text: "You grab a torch off the wall as you walk through the door. The second level below smells terrible, but you desend.",
+entry_text: "You grab a torch off the wall as you walk through the door. The second level below smells terrible, but you descend.",
 exit_text: "It's too quiet and you realize you don't hear Bork crying anymore. You begin to run."
 )
 
@@ -25,7 +25,7 @@ exit_text: "You know the way out and nothing can stop you!"
 Monster.create(name: "Giant Rat", health: 10, attack: 5, dungeon_level_id: 1, img_url: "",
 intro_text: "A Giant Rat scurries around the corner, chittering furiously.",
 quote: "You'll brie sorry you crossed me!",
-death_text: "The Giant Rat falls over dead. A few items fall out his bag and you help yourself. Do you think he'll... SWISS them?",
+death_text: "The Giant Rat falls over dead. A few items fall out his bag and you help yourself. You unfortunately can't think of a cheese pun.",
 )
 
 Monster.create(name: "Minotaur", health: 15, attack: 8, dungeon_level_id: 2, img_url: "",
@@ -37,7 +37,7 @@ death_text: "The Minotaur falls over dead, knocking over a chest of items. Cow p
 Monster.create(name: "Dragon", health: 30, attack: 15, dungeon_level_id: 3, img_url: "",
 intro_text: "An enormous Dragon sits upon a huge pile of treasure. She roars and breathes fire into the air.",
 quote: "Giant piles of treasure offer very poor lumbar support.",
-death_text: "The Dragon falls overt dead.",
+death_text: "The Dragon falls over dead.",
 )
 
 LootItem.create(name: "Steel Sword", dungeon_level_id: 1, bonus_type: "Attack", bonus: 5,

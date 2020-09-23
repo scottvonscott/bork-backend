@@ -3,9 +3,9 @@ class GamesController < ApplicationController
 
   # GET /games
   def index
-    @games = Game.all
+    games = Game.all
 
-    render json: @games
+    render json: GameSerialzer.new(games)
   end
 
   # GET /games/1
@@ -15,12 +15,12 @@ class GamesController < ApplicationController
 
   # POST /games
   def create
-    @game = Game.new(game_params)
+    game = Game.new(player_id: params, score: 0, player_health: 20, player_attack: 5)
 
-    if @game.save
-      render json: @game, status: :created, location: @game
+    if game.save
+      render json: GameSerialzer.new(game), status: :created, location: game
     else
-      render json: @game.errors, status: :unprocessable_entity
+      render json: game.errors, status: :unprocessable_entity
     end
   end
 
@@ -45,7 +45,7 @@ class GamesController < ApplicationController
     end
 
     # Only allow a trusted parameter "white list" through.
-    def game_params
-      params.require(:game).permit(:Player_id, :turn_count, :score, :player_health, :player_attack)
-    end
+    # def game_params
+    #   params.require(:game).permit(:Player_id, :turn_count, :score, :player_health, :player_attack)
+    # end
 end
