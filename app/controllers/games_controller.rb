@@ -3,9 +3,9 @@ class GamesController < ApplicationController
 
   # GET /games
   def index
-    games = Game.all
+    games = Game.high_scores
 
-    render json: GameSerialzer.new(games)
+    render json: GameSerializer.new(games)
   end
 
   # GET /games/1
@@ -18,20 +18,20 @@ class GamesController < ApplicationController
     game = Game.new(player_id: params, score: 0, player_health: 20, player_attack: 5)
 
     if game.save
-      render json: GameSerialzer.new(game), status: :created, location: game
+      render json: GameSerializer.new(game), status: :created, location: game
     else
       render json: game.errors, status: :unprocessable_entity
     end
   end
 
-  # # PATCH/PUT /games/1
-  # def update
-  #   if @game.update(game_params)
-  #     render json: @game
-  #   else
-  #     render json: @game.errors, status: :unprocessable_entity
-  #   end
-  # end
+  # PATCH/PUT /games/1
+  def update
+    if @game.update(game_params)
+      render json: @game
+    else
+      render json: @game.errors, status: :unprocessable_entity
+    end
+  end
 
   # # DELETE /games/1
   # def destroy
