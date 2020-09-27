@@ -10,7 +10,8 @@ class DungeonLevelsController < ApplicationController
   
     # GET /dungeon_levels/1
     def show
-      render json: @dungeon_level
+      dungeon = @dungeon_level
+      render json: DungeonLevelSerializer.new(dungeon)
     end
   
     # # POST /dungeon_levels
@@ -41,7 +42,7 @@ class DungeonLevelsController < ApplicationController
     private
       # Use callbacks to share common setup or constraints between actions.
       def set_dungeon_level
-        @dungeon_level = dungeon_level.find(params[:id])
+        @dungeon_level = DungeonLevel.find_by(id: params[:id])
       end
   
       # Only allow a trusted parameter "white list" through.
