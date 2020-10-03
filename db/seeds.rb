@@ -24,22 +24,25 @@ entry_text: "The third level seems to glow with it's own unearthly light, the ca
 exit_text: "You know the way out and nothing can stop you!"
 )
 
-Monster.create(name: "Giant Rat", health: 10, attack: 5, dungeon_level_id: 1, img_url: "https://i.pinimg.com/originals/40/d8/48/40d84814f7e381761d02178fea7bcdd4.jpg",
+Monster.create(name: "Giant Rat", health: 10, attack: 5, dungeon_level_id: 1, img_url: "http://www.simpleimageresizer.com/_uploads/photos/4da03d78/ratman_1_500x448.jpg",
 intro_text: "A Giant Rat scurries around the corner, chittering furiously.",
 quote: "You'll brie sorry you crossed me!",
 death_text: "The Giant Rat falls over dead. A few items fall out his bag and you help yourself. You unfortunately can't think of a cheese pun.",
+final_boss: false
 )
 
 Monster.create(name: "Minotaur", health: 15, attack: 8, dungeon_level_id: 2, img_url: "https://gamertweak.com/wp-content/uploads/2020/05/minotaur-assassins-creed-odyssey.jpg",
 intro_text: "A huge Minotaur runs up and snorts heavily. He flexes his muscles for you",
 quote: "I'm the beefiest!",
 death_text: "The Minotaur falls over dead, knocking over a chest of items. Cow punnnnn",
+final_boss: false
 )
 
 Monster.create(name: "Dragon", health: 30, attack: 15, dungeon_level_id: 3, img_url: "https://i.guim.co.uk/img/static/sys-images/Guardian/Pix/pictures/2014/12/9/1418121741203/Smaug-011.jpg?width=300&quality=45&auto=format&fit=max&dpr=2&s=da5839aacac848a16bff061cdf73d3e9",
 intro_text: "An enormous Dragon sits upon a huge pile of treasure. She roars and breathes fire into the air.",
 quote: "Giant piles of treasure offer very poor lumbar support.",
 death_text: "The Dragon falls over dead.",
+final_boss: true
 )
 
 LootItem.create(name: "Steel Sword", dungeon_level_id: 1, bonus_type: "Attack", bonus: 5,

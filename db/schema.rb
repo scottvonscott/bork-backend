@@ -51,6 +51,7 @@ ActiveRecord::Schema.define(version: 2020_09_22_035212) do
     t.string "intro_text"
     t.string "quote"
     t.string "death_text"
+    t.boolean "final_boss"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["dungeon_level_id"], name: "index_monsters_on_dungeon_level_id"

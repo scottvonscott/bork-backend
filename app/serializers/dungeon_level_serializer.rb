@@ -12,7 +12,7 @@ class DungeonLevelSerializer
     attribute :monsters do |object|
         object.monsters.map do |m|
           {name: m.name, health: m.health, attack: m.attack, img_url: m.img_url,
-            intro_text: m.intro_text, quote: m.quote, death_text: m.death_text}
+            intro_text: m.intro_text, quote: m.quote, death_text: m.death_text, final_boss: m.final_boss}
         end
          
       end

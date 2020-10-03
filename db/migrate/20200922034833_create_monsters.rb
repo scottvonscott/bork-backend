@@ -9,6 +9,7 @@ class CreateMonsters < ActiveRecord::Migration[6.0]
       t.string :intro_text
       t.string :quote
       t.string :death_text
+      t.boolean :final_boss
 
       t.timestamps
     end
