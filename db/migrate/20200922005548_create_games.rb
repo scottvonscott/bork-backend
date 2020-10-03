@@ -1,11 +1,10 @@
 class CreateGames < ActiveRecord::Migration[6.0]
   def change
     create_table :games do |t|
-      t.references :player, null: false, foreign_key: true
-      t.integer :turn_count
       t.integer :score
-      t.integer :player_health
-      t.integer :player_attack
+      t.string :player_name
+
+
 
       t.timestamps
     end

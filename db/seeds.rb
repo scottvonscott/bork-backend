@@ -6,9 +6,9 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Player.create(name: "Scott")
-Game.create(player_id: 1, turn_count: 11, score: 2000, player_health: 4, player_attack: 10)
-Game.create(player_id: 1, turn_count: 9, score: 3000, player_health: 8, player_attack: 15)
+
+
+Game.create(player_name: "Scott",score: 3000)
 DungeonLevel.create(level_number: 1,
 entry_text: "You decend into the first level of the caves. Why are there lit torches lining the walls? That's weird...",
 exit_text: "You press on. Further in, there's a heavy wooden door embeded in the cave walls. It creaks open as you approach."

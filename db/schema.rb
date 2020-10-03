@@ -21,14 +21,10 @@ ActiveRecord::Schema.define(version: 2020_09_22_035212) do
   end
 
   create_table "games", force: :cascade do |t|
-    t.integer "player_id", null: false
-    t.integer "turn_count"
     t.integer "score"
-    t.integer "player_health"
-    t.integer "player_attack"
+    t.string "player_name"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["player_id"], name: "index_games_on_player_id"
   end
 
   create_table "loot_items", force: :cascade do |t|
@@ -57,13 +53,6 @@ ActiveRecord::Schema.define(version: 2020_09_22_035212) do
     t.index ["dungeon_level_id"], name: "index_monsters_on_dungeon_level_id"
   end
 
-  create_table "players", force: :cascade do |t|
-    t.string "name"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
-  add_foreign_key "games", "players"
   add_foreign_key "loot_items", "dungeon_levels"
   add_foreign_key "monsters", "dungeon_levels"
 end

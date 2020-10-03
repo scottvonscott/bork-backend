@@ -15,7 +15,7 @@ class GamesController < ApplicationController
 
   # POST /games
   def create
-    game = Game.new(player_id: params, score: 0, player_health: 20, player_attack: 5)
+    # game = Game.new(player_id: params, score: 0, player_health: 20, player_attack: 5)
 
     if game.save
       render json: GameSerializer.new(game), status: :created, location: game
