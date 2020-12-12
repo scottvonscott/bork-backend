@@ -15,7 +15,9 @@ class GamesController < ApplicationController
 
   # POST /games
   def create
-    # game = Game.new(player_id: params, score: 0, player_health: 20, player_attack: 5)
+
+    game = Game.new(score: params[:score], player_name: params[:player_name])
+    # game = Game.new(game_params)
 
     if game.save
       render json: GameSerializer.new(game), status: :created, location: game
@@ -45,7 +47,7 @@ class GamesController < ApplicationController
     end
 
     # Only allow a trusted parameter "white list" through.
-    # def game_params
-    #   params.require(:game).permit(:Player_id, :turn_count, :score, :player_health, :player_attack)
-    # end
+    def game_params
+      params.permit(:player_name, :score)
+    end
 end

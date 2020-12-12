@@ -24,7 +24,7 @@ entry_text: "The third level seems to glow with it's own unearthly light, the ca
 exit_text: "You know the way out and nothing can stop you!"
 )
 
-Monster.create(name: "Giant Rat", health: 10, attack: 5, dungeon_level_id: 1, img_url: "http://www.simpleimageresizer.com/_uploads/photos/4da03d78/ratman_1_500x448.jpg",
+Monster.create(name: "Giant Rat", health: 10, attack: 5, dungeon_level_id: 1, img_url: "https://i.pinimg.com/originals/40/d8/48/40d84814f7e381761d02178fea7bcdd4.jpg",
 intro_text: "A Giant Rat scurries around the corner, chittering furiously.",
 quote: "You'll brie sorry you crossed me!",
 death_text: "The Giant Rat falls over dead. A few items fall out his bag and you help yourself. You unfortunately can't think of a cheese pun.",
